@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Visit Dice Simulator</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="container">
+        <header class="hero">
+            <div class="eyebrow">JAVA RANDOM SIMULATION</div>
+            <h1>Website Visit<br><span>Dice Simulator</span></h1>
+            <p>Simulate 100,000 fair dice rolls and see which website gets the highest number of selections.</p>
+        </header>
+
+        <section class="info-grid">
+            <div class="info-card">
+                <span class="info-label">TOTAL DICE ROLLS</span>
+                <strong>100,000</strong>
+            </div>
+            <div class="info-card">
+                <span class="info-label">WEBSITES</span>
+                <strong>6</strong>
+            </div>
+            <div class="info-card">
+                <span class="info-label">CHANCE PER SITE</span>
+                <strong>16.67%</strong>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">LET'S ROLL</span>
+                    <h2>Run the simulation</h2>
+                </div>
+                <div class="dice-icon">⚄</div>
+            </div>
+            <p class="muted">Each dice result is mapped to one website. The Java program performs all 100,000 rolls.</p>
+            <form action="/roll" method="POST">
+                <button type="submit">Roll dice 100,000 times <span>→</span></button>
+            </form>
+            <p class="fine-print">This is a mathematical simulation, not actual website analytics or real visits.</p>
+        </section>
+
+        <!-- WINNER -->
+
+        <section class="panel results-panel">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">DICE MAPPING</span>
+                    <h2>Website list</h2>
+                </div>
+            </div>
+            <div class="mapping">
+                <div><span class="die">1</span><span>pune-food-guide.com</span></div>
+                <div><span class="die">2</span><span>best-pizza-pune.com</span></div>
+                <div><span class="die">3</span><span>college-canteen-blog.com</span></div>
+                <div><span class="die">4</span><span>pizza-recipes-home.com</span></div>
+                <div><span class="die">5</span><span>cheap-eats-pune.com</span></div>
+                <div><span class="die">6</span><span>pizza-pizza-pizza.com</span></div>
+            </div>
+        </section>
+
+        <section class="panel results-panel">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">SIMULATION OUTPUT</span>
+                    <h2>Visit count comparison</h2>
+                </div>
+            </div>
+            <div class="results">
+                <!-- RESULTS -->
+            </div>
+            <p class="empty-state">Click the button above to generate the results.</p>
+        </section>
+
+        <footer>Built with Java, HTML and CSS · Results vary slightly each time because dice rolls are random.</footer>
+    </main>
+</body>
+</html>
